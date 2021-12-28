@@ -39,8 +39,6 @@ train_loader = Data.DataLoader(dataset=train_dataset, batch_size=args.bs, shuffl
 test_loader = Data.DataLoader(dataset=test_dataset, batch_size=args.bs, shuffle=True)
 
 
-
-
 class BasicBlock(nn.Module):
     def __init__(self, input_channel, output_channel, kernel_size, stride, padding):
         super(BasicBlock, self).__init__()
@@ -67,6 +65,7 @@ class BasicBlock(nn.Module):
         x = F.relu(x)
         return x
 
+
 class ResNet(nn.Module):
     def __init__(self, input_channel, num_classes):
         super(ResNet, self).__init__()
@@ -89,7 +88,6 @@ class ResNet(nn.Module):
         out = self.fc(x)
 
         return out
-
 
 
 def adjust_learning_rate(optimizer, epoch):
