@@ -10,8 +10,8 @@ PAMAP2:http://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitorin
 
 UCI-HAR:https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones
 
-USC-HAD:https://sipi.usc.edu/had/
-
 UNIMIB-SHAR:http://www.sal.disco.unimib.it/technologies/unimib-shar/
+
+USC-HAD:https://sipi.usc.edu/had/
 
 WISDM:https://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+
