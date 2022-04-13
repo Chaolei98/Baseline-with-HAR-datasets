@@ -11,5 +11,5 @@ def make_x(path):
 
 train_x = make_x('./train/Inertial Signals')
 test_x = make_x('./test/Inertial Signals')
-train_y = np.genfromtxt('./train/y_train.txt').reshape(-1)
-test_y = np.genfromtxt('./test/y_test.txt').reshape(-1)
+train_y = np.genfromtxt('./train/y_train.txt', dtype=int).reshape(-1)
+test_y = np.genfromtxt('./test/y_test.txt', dtype=int).reshape(-1)
