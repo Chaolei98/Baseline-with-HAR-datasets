@@ -17,14 +17,10 @@ parser.add_argument('--epoch', type=int, default=200, help='Epoch')
 args = parser.parse_args()
 
 #load data
-train_x = torch.from_numpy(np.load('/data1/experiment/hcl/Datasets/pamap2/x_train.npy')).float()
-train_y = torch.from_numpy(np.load('/data1/experiment/hcl/Datasets/pamap2/y_train.npy')).long()
-test_x = torch.from_numpy(np.load('/data1/experiment/hcl/Datasets/pamap2/x_test.npy')).float()
-test_y = torch.from_numpy(np.load('/data1/experiment/hcl/Datasets/pamap2/y_test.npy')).long()
-# train_x = torch.from_numpy(np.load('/mnt/experiment/hcl/Datasets/pamap2/x_train.npy')).float()
-# train_y = torch.from_numpy(np.load('/mnt/experiment/hcl/Datasets/pamap2/y_train.npy')).long()
-# test_x = torch.from_numpy(np.load('/mnt/experiment/hcl/Datasets/pamap2/x_test.npy')).float()
-# test_y = torch.from_numpy(np.load('/mnt/experiment/hcl/Datasets/pamap2/y_test.npy')).long()
+train_x = torch.from_numpy(np.load('/Datasets/pamap2/x_train.npy')).float()
+train_y = torch.from_numpy(np.load('/Datasets/pamap2/y_train.npy')).long()
+test_x = torch.from_numpy(np.load('/Datasets/pamap2/x_test.npy')).float()
+test_y = torch.from_numpy(np.load('/Datasets/pamap2/y_test.npy')).long()
 
 train_x = torch.unsqueeze(train_x, 1)
 test_x = torch.unsqueeze(test_x, 1)
