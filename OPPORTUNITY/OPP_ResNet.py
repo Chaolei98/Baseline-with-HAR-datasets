@@ -12,7 +12,7 @@ import argparse
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 parser = argparse.ArgumentParser()
 parser.add_argument('--bs', type=int, default=256, help='Batch size')
-parser.add_argument('--lr', type=int, default=5e-4, help='Learning rate')
+parser.add_argument('--lr', type=float, default=5e-4, help='Learning rate')
 parser.add_argument('--epoch', type=int, default=200, help='Epoch')
 args = parser.parse_args()
 
